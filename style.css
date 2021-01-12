@@ -86,3 +86,30 @@ nav {
   padding: 2vh 2vw;
   flex: 0.29;
 }
+
+.nav-buttons li {
+  list-style: none;
+}
+
+.hamburger div {
+  height: 3px;
+  width: 30px;
+  background: #ffff00;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-color: #6f33d1;
+}
+.about {
+  height: 200vh;
+  width: 100%;
+  background-color: #ff4a54;
+}
