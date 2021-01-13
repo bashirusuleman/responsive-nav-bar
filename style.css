@@ -24,7 +24,7 @@ nav {
 }
 
 .scrolled {
-  background-color: #0000007a;
+  background-color: #00007a;
   backdrop-filter: blue(10px);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.404);
 }
@@ -113,7 +113,101 @@ nav {
   width: 100%;
   background-color: #ff4a54;
 }
+.projects {
+  height: 100vh;
+  width: 100%;
+  background-color: #55b3b1;
+}
+.skills {
+  height: 200vh;
+  width: 100%;
+  background-color: #c1a1d3;
+}
 
+@media screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    z-index: 3;
+    color: white;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+  .logo {
+    margin-right: 115vw;
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+  .nav-links li {
+    margin-bottom: 100px;
+  }
+  .nav-links li a {
+    color: #ffff00;
+  }
+  .nav-links li a::before {
+    background-color: #ffffa2;
+  }
+  .navbar {
+    position: fixed;
+    background: #121212;
+    backdrop-filter: blur(150px);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .navbar li {
+    opacity: 0;
+    justify-content: space-evenly;
+  }
+
+  .navbar li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .navbar li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+
+  .navbar li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+
+  .navbar li:nth-child(4) {
+    transition: all 0.5s ease 0.7s;
+  }
+
+  .navbar li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+
+  .navbar li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+}
 /*  Animating Hamburger icon on click   */
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);

@@ -21,7 +21,7 @@ const homeObserver = new IntersectionObserver(function (entries, homeObserver) {
     if (!entry.isIntersecting) {
       nav.classList.add("scrolled");
     } else {
-      nav.classList.remove("scrolled");
+      nav.classList.remove(".scrolled");
     }
   });
 }, homeOptions);
