@@ -1,0 +1,12 @@
+  
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "Entered the pre_build phase..."
+  build:
+    commands:
+    - aws s3 cp --recursive . "s3://bashirusuleman.com"
+  post_build:
+    commands:
+    - echo "Entered post-build  phase"
